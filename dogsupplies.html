@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!--this is how we insert comments-->
+<!-- below tells the computer that the language is set to  English-->
+<!--html tags starts and closes the web page-->
+<html lang="en">
+
+<!--the title is accesed by various search engines-->
+<title>	</title>
+
+<!--Meta tags are snippets of text that describe a page's content;The encoding is variable length and uses 8 bit code units; -->
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<div class="container">
+<header>
+<div style="background-color:#00cc99;color:white;padding:20px;">
+
+	<h1><u>Durham House of Pets</u></h1>
+	<p><h2>Durham House of Pets is the store to shop at if you want your pets to eat as well
+	as you do! We specialize in all Organic foods that any pet can appreciate.</h2></p>
+</div>
+<div class="navbar">
+  <a href="index.html">About Us</a>
+  <a href="employees.html">Our Team</a>
+  <a href="policies.html">Policies</a>
+  <a href="contact_us.html">Contact Us</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="dogsupplies.html">Dog Supplies</a>
+      <a href="catsupplies.html">Cat Supplies</a>
+      <a href="snakesupplies.html">Snake Supplies</a>
+    </div>
+  </div> 
+</div>
+
+<script>
+
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<hr>
+
+</header>
+<div style="background-color:#00cc99;color:white;">
+<article>
+
+
+<p> <h2><u>Dog Food</u></h2>
+
+<p> <h4></h4>
+</p>
+</b>
+
+
+<ul>
+	<li>Organic Roasted Broccoli Kibble</li>
+	<br>
+	<img src="broccoli.jpg" alt="broccoli" height="200" width="200" border="5" stle="border-color:white">
+	<li>Beef and Pumpkin Soft Food</li>
+	<br>
+	<img src="beef.jpg" alt="beef" height="200" width="200" border="5" stle="border-color:white">
+	<li>Lamb and Vegetable Dry Food</li>
+	<br>
+	<img src="vegetable.jpg" alt="vegetable" height="200" width="200" border="5" stle="border-color:white">
+</ul>
+
+
+</article>
+
+<aside>
+
+<p> <h2><u>Dog Apparel</u></h2> </p>
+
+<ul>
+	<li>Hand Woven Dog Collar</li>
+	<br>
+	<img src="collar.jpg" alt="collar" height="200" width="200" border="5" stle="border-color:white">
+	<li>Recycled Rubber Ball</li>
+	<br>
+	<img src="ball.jpg" alt="ball" height="200" width="200" border="5" stle="border-color:white">
+	<li>Cashmere Dog Sweater</li>
+	<br>
+	<img src="sweater.jpg" alt="sweater" height="200" width="200" border="5" stle="border-color:white">
+</ul>
+
+</aside>
+
+<footer>
+Durham House of Pets EST. 1999
+</footer>
+
+<figcaption><h2><i>The Pet Store That Serves The Pets!</i></h2></figcaption>
+
+
+
+
+</body>
+
+</html>

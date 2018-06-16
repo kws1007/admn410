@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!--this is how we insert comments-->
+<!-- below tells the computer that the language is set to  English-->
+<!--html tags starts and closes the web page-->
+<html lang="en">
+
+<!--the title is accesed by various search engines-->
+<title>	</title>
+
+<!--Meta tags are snippets of text that describe a page's content;The encoding is variable length and uses 8 bit code units; -->
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<div class="container">
+<header>
+<div style="background-color:#00cc99;color:white;padding:20px;">
+
+	<h1><u>Durham House of Pets</u></h1>
+	<p><h2>Durham House of Pets is the store to shop at if you want your pets to eat as well
+	as you do! We specialize in all Organic foods that any pet can appreciate.</h2></p>
+</div>
+<div class="navbar">
+  <a href="index.html">About Us</a>
+  <a href="employees.html">Our Team</a>
+  <a href="policies.html">Policies</a>
+  <a href="contact_us.html">Contact Us</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="dogsupplies.html">Dog Supplies</a>
+      <a href="catsupplies.html">Cat Supplies</a>
+      <a href="snakesupplies.html">Snake Supplies</a>
+    </div>
+  </div> 
+</div>
+
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<hr>
+
+</header>
+<div style="background-color:#00cc99;color:white;">
+<article>
+
+
+<p> <h2><u>Snake Food</u></h2>
+
+<p> <h4></h4>
+</p>
+</b>
+
+
+<ul>
+	<li>Live Mice</li>
+	<br>
+	<img src="mouse2.jpg" alt="mouse" height="200" width="300" border="5" stle="border-color:white">
+	<li>Crickets</li>
+	<br>
+	<img src="cricket.jpg" alt="cricket" height="200" width="250" border="5" stle="border-color:white">
+	<li>Organic Brown Eggs</li>
+	<br>
+	<img src="egg.jpg" alt="egg" height="200" width="250" border="5" stle="border-color:white">
+</ul>
+
+
+</article>
+
+<aside>
+
+<p> <h2><u>Snake Apparel</u></h2> </p>
+
+<ul>
+	<li>Snake Tank</li>
+	<br>
+	<img src="tank.jpg" alt="tank" height="200" width="200" border="5" stle="border-color:white">
+	<li>Snake Tank Heating Lamp</li>
+	<br>
+	<img src="lamp.jpg" alt="lamp" height="200" width="200" border="5" stle="border-color:white">
+	<li>Snake Tank Branch Decoration</li>
+	<br>
+	<img src="decoration.jpg" alt="decoration" height="200" width="200" border="5" stle="border-color:white">
+</ul>
+
+</aside>
+
+<footer>
+Durham House of Pets EST. 1999
+</footer>
+
+<figcaption><h2><i>The Pet Store That Serves The Pets!</i></h2></figcaption>
+
+
+
+
+</body>
+
+</html>
+

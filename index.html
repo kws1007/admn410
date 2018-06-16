@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<header>
+<div style="background-color:#00cc99;color:white;padding:20px;">
+
+	<h1><u>Durham House of Pets</u></h1>
+	<p><h2>Durham House of Pets is the store to shop at if you want your pets to eat as well
+	as you do! We specialize in all Organic foods that any pet can appreciate.</h2></p>
+</div>
+<div class="navbar">
+  <a href="index.html">About Us</a>
+  <a href="employees.html">Our Team</a>
+  <a href="policies.html">Policies</a>
+  <a href="contact_us.html">Contact Us</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="dogsupplies.html">Dog Supplies</a>
+      <a href="catsupplies.html">Cat Supplies</a>
+      <a href="snakesupplies.html">Snake Supplies</a>
+    </div>
+  </div> 
+</div>
+
+
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<hr>
+
+</header>
+<div style="background-color:#00cc99;color:white;">
+<article>
+<figcaption><h2><i><u>DHP Company History</u></i></h2></figcaption>
+</b>
+
+<p> <h4>Unimpressed with the low quality products offered at larger chain pet stores,
+Jimmy Jenkins founded Durham House of Pets in 1999. 
+In DHP’s early days, Jimmy Jenkins would make his own pet food 
+and dog biscuits. Durham House of Pets grew in popularity and word 
+spread about his natural pet foods.</h4>
+</p>
+<br>
+
+</article>
+
+<aside>
+
+<p> <h2><u>Why Use Us?</u></h2>
+
+<p> <h4>Durham House of Pets specializes in Organic pet food. 
+Jimmy wanted his customers' pets to eat just as well as humans do. 
+Jimmy also places high priority on quality customer service. 
+Everyone who works at DHP is carefully chosen for their love of animals. 
+The employees are trained extensively to answer every customer question with confidence. 
+DHP still produces it’s own organic premium pet foods, 
+but they also source food from other organic manufacturers that meet DHP’s high standards.
+Durham House of Pets is located in the heart of Durham, New Hampshire. </h4>
+</p>
+</b>
+
+</aside>
+
+<footer>
+Durham House of Pets EST. 1999
+</footer>
+
+<figcaption><h2><i>The Pet Store That Serves The Pets!</i></h2></figcaption>
+
+
+</body>
+</html>

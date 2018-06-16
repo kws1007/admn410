@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<!--this is how we insert comments-->
+<!-- below tells the computer that the language is set to  English-->
+<!--html tags starts and closes the web page-->
+<html lang="en">
+
+<!--the title is accesed by various search engines-->
+<title>	</title>
+
+<!--Meta tags are snippets of text that describe a page's content;The encoding is variable length and uses 8 bit code units; -->
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<div class="container">
+<header>
+<div style="background-color:#00cc99;color:white;padding:20px;">
+
+	<h1><u>Durham House of Pets</u></h1>
+	<p><h2>Durham House of Pets is the store to shop at if you want your pets to eat as well
+	as you do! We specialize in all Organic foods that any pet can appreciate.</h2></p>
+</div>
+<div class="navbar">
+  <a href="index.html">About Us</a>
+  <a href="employees.html">Our Team</a>
+  <a href="policies.html">Policies</a>
+  <a href="contact_us.html">Contact Us</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="dogsupplies.html">Dog Supplies</a>
+      <a href="catsupplies.html">Cat Supplies</a>
+      <a href="snakesupplies.html">Snake Supplies</a>
+    </div>
+  </div> 
+</div>
+
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<hr>
+
+</header>
+<div style="background-color:#00cc99;color:white;">
+<article>
+<figcaption><h2><i></i></h2></figcaption>
+</b>
+
+<p><h2><u>Employees</u></h2></p>
+
+<img src="jimmy.jpg" alt="jimmy" height="200" width="200" border="5" style="border-color:white">
+<p><h3><u>Jimmy Jenkins</u></h3></p>
+
+<p> <h4>Jimmy Jenkins is the man who started Durham House of Pets. He is the 
+CEO of the company and has been working at DHP since it has opened. Jimmy doesn't
+work as much in store, but instead more on a corporate level.</h4>
+</p>
+<p><h4>Years Employed: 18</h4></p>
+<p><h4>Phone Extension: 01</h4></p>
+<br>
+
+<img src="rob.jpg" alt="rob" height="200" width="300" border="5" style="border-color:white">
+
+<p><h3><u>Carl Yates</u></h3></p>
+
+<p> <h4>Carl is the Senior Marketer for Durham House of Pets. Carl's job is to advertise for DHP and bring in new
+customers to the company. Carl spends most of his time advertising on social media. Carl 
+likes using social media advertising because it's free and easy to reach out to many people on.</h4>
+<p><h4>Years Employed: 3</h4></p>
+<p><h4>Phone Extension: 0225</h4></p>
+</b>
+
+
+
+
+
+
+</article>
+
+<aside>
+
+<p><h2><u>Employees</u></h2></p>
+
+<img src="duo.jpg" alt="duo" height="200" width="300" border="5" style="border-color:white">
+<p><h3><u>Leo Cobb and Arnold Watts</u></h3></p>
+
+<p> <h4>Leo and Arnold, known as the dynamic duo here at Durham House of Pets. These two are
+never separated. Leo and Arnold are good friends of Jimmy, and they invested in DHP. 
+Leo and Arnold work in store and are always at the customer's service.</h4>
+<p><h4>Years Employed: Both 15</h4></p>
+<p><h4>Phone Extension: 22</h4></p>
+
+<img src="alfonzo.jpg" alt="alfonzo" height="200" width="300" border="5" style="border-color:white">
+<p><h3><u>Alfonzo Thyme</u></h3></p>
+
+<p> <h4>Alfonzo is our head data architect here at Durham House of Pets. Alfonzo takes care
+of all the online and instore transactions. There's a lot of data generated through running a
+business, so Jimmy needed to hire someone who could tackle the job. Alfonzo has never failed to
+amaze Leo and Arnold with his amazing computer skills.</h4>
+<p><h4>Years Employed: 2</h4></p>
+<p><h4>Phone Extension: 03</h4></p>
+
+</aside>
+
+<footer>
+Durham House of Pets EST. 1999
+</footer>
+
+<figcaption><h2><i>The Pet Store That Serves The Pets!</i></h2></figcaption>
+
+
+
+
+</body>
+
+</html>
