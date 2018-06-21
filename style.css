@@ -1,7 +1,7 @@
 body
 {
 background-color:white;
-background-image:url("nyc.jpg");
+background-image:url("collage.jpg");
 }
 
 
@@ -27,7 +27,7 @@ background-color:#00cc99;
 }
 
 div {
-    background: linear-gradient(to bottom left, #2600ff 0%, #499145 100%);
+    background: linear-gradient(to bottom left, #a2b9bc 0%, #6b5b95 100%);
 }
 
 header,footer
@@ -36,7 +36,7 @@ clear:both;
 	/*all text between header and footer is centered*/
 text-align:center;
 color:white;
-background: linear-gradient(to bottom left, #d87c0a 0%, #2600ff 100%);
+background: linear-gradient(to bottom left, #a2b9bc 0%, #6b5b95 100%);
 }
 
 header img
@@ -244,4 +244,34 @@ left: 60px;
 
 .show {
     display: block;
+}
+
+.navbar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.navbar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+}
+
+.navbar a:hover {
+    color: #f1f1f1;
+}
+
+
+@media screen and (max-height: 450px) {
+    .navbar {padding-top: 15px;}
+    .navbar a {font-size: 18px;}
 }
